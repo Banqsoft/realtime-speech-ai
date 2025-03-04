@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/qlogo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtime API with openai-node SDK</title>
+</head>
+
+<body>
+  <div id="app" class="flex min-h-screen flex-col w-full">
+    <div class="toolbar">
+        <a href="/"><svg width="40px" height="40px" viewBox="0 0 40 40" class="h-10 w-10 transition-colors duration-200 ease-in-out text-primary-500 group-hover:text-primary-400"><g id="logo-/-short-clear" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M23.3403157,27.9354839 C24.6373447,25.5483871 25.2858591,23.2258065 25.8046707,20.7741935 C26.6477395,16.7741935 27.3611054,9.61290323 22.1729897,9.5483871 C17.1794283,9.5483871 14.4556676,15.8064516 13.6125988,19.8064516 C12.3804213,25.6129032 15.817548,30 21.5244752,30 C23.4700186,30 26.5180366,29.7419355 28.5284314,29.0967742 L27.7502141,30.8387097 C25.2210077,31.6774194 21.5244752,32 19.0601203,32 C11.7967583,32 7.77596862,27.7419355 9.33240333,20.1290323 C10.6942837,13.7419355 15.7526965,8.06451613 22.4972469,8 C29.1769459,8 31.6413009,12.8387097 30.3442719,19.2903226 C29.5660546,22.9677419 27.3611054,26.8387097 24.248236,29.2258065 L23.3403157,27.9354839 Z" id="Path" fill="currentColor"></path></g></svg></a>
+        <span style="flex-grow: 1;"></span>        
+      </div>
+    </div>
+    <div class="container">
+      <div id="main-component-container">
+
+      </div>
+      <div style="height: 40px"></div>
+      <div id="last-chat-response-container">
+        
+      </div>
+      <div id="custom-chat-message-container" class="input-group">
+        <textarea id="customchatmessage"></textarea>
+        <div class="button-group">
+          <button id="sendcustomchatmessagebutton">Send</button>
+          <button id="start-recording" type="button">Record</button>
+          <button id="stop-recording" type="button" disabled="true">Stop</button>
+        </div>          
+      </div>
+      <div id="received-text-container">
+       
+      </div>
+      <div class="controls" style="display: none;">
+        <div class="input-group">
+          <div>
+            <div class="input-group">
+              <label for="session-instructions">System Message</label>
+              <textarea id="session-instructions"
+                placeholder="Optional instructions for the session, e.g. 'You talk like a pirate.'" rows="4"></textarea>
+            </div>
+            <div class="input-group">
+              <label for="temperature">Temperature</label>
+              <input id="temperature" type="number" min="0.6" max="1.2" step="0.05"
+                placeholder="0.6-1.2 (default 0.8)" />
+            </div>
+            <div class="input-group">
+              <label for="voice">Voice</label>
+              <select id="voice">
+                <option></option>
+                <option>alloy</option>
+                <option>ash</option>
+                <option>ballad</option>
+                <option>coral</option>
+                <option>echo</option>
+                <option>sage</option>
+                <option>shimmer</option>
+                <option>verse</option>
+              </select>
+            </div>
+            <div class="button-group">
+              <button id="clear-all" type="button">Clear all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

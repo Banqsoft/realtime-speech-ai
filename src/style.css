@@ -1,0 +1,223 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap";
+*,
+:before,
+:after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style:          
+;
+}
+
+.group-hover:text-primary-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(69 128 230 / var(--tw-text-opacity, 1)) !important;
+}
+
+.text-primary-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(41 101 204 / var(--tw-text-opacity, 1)) !important;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.toolbar {
+  background-color: #ffff;
+  padding: 10px;
+  display: flex;
+}
+.container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  max-width: 1024px;
+}
+
+#main-component-container  {
+  flex: 6;
+}
+#received-text-container {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+  margin-right: 2rem;
+  font-size: 11px;
+  color: rgb(203, 213, 225);
+}
+
+.controls {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border-color: rgb(248, 250, 252);
+  border-color: rgb(203, 213, 225);
+  margin-bottom: 0.5rem;
+  transition: border-color 0.25s;
+}
+
+.input-group input:hover,
+.input-group textarea:hover {
+  border-color: rgb(185, 204, 238);
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group input:focus-visible,
+.input-group textarea:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: rgb(185, 204, 238);
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toggle-group label {
+  margin-right: 0.5rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(233, 240, 249);
+  color: rgb(27, 88, 144);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.toolbar button {
+  background-color: #ffffff;
+  color: rgb(233, 240, 249);
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(18, 78, 181);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button.recording {
+  background-color: rgba(255, 58, 48, 0.512);
+  color: white;
+}
+
+.blinking {
+  animation: blinking-animation 1s infinite;
+}
+
+@keyframes blinking-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#stop-recording {
+  display: none;
+}

@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-top: 1px solid #ddd;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  color: rgb(71, 85, 105);
+  text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: right;
+}
