@@ -1,7 +1,7 @@
 # Realtime speech AI managing accounts and transfer
 
 
-This is the source code of the AI showcase demonstrated at [Norway Fintech Festival 2025](https://www.norwayfintechfestival.no/2025)
+This is the source code of the AI showcase demonstrated at [Norway Fintech Festival 2025](https://www.norwayfintechfestival.no/2025). While the recording from the presentation from the festival is not publicly available, you can see the rehersal recording via this [Linkedin post here](https://www.linkedin.com/posts/banqsoft_peter-s-demos-ai-in-a-core-banking-system-activity-7317873520590360577-lgTJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAF6UkBRylK0Bu-BGkfq7kbhB3YsBS66yw).
 
 The code in this respository is based on https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/samples/realtime-api-plus/web
 
